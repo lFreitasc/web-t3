@@ -20,7 +20,7 @@ module.exports = function(server) {
     knowledgeService.register(router, 'conhecimentos')
 
     const experiences = require('../api/mydb/experiencesService')
-    experiences.register(router, 'experiencias')
+    experiences.register(router, '/experiencias')
 
     const portfolioService = require('../api/mydb/portfolioService')
     portfolioService.register(router, '/portfolio')
